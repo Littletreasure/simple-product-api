@@ -7,8 +7,9 @@ JSON response.
 
 ## What should I do?
 
-Candidates start by creating their own branch off of "main". They can then enhance the API by implementing the below
-business requirements. Finally, once satisfied a merge request should be raised and assigned to "Kyle Parry" for review.
+Candidates should start by first cloning this project onto their development machine. They should then work through
+the requirements documented below. Finally, once satisfied send the completed project as a ZIP file to the hiring
+manager.
 
 1. Add a resource to save a new product.
     1. It should not be possible to insert a product with an existing ID.
@@ -20,3 +21,5 @@ business requirements. Finally, once satisfied a merge request should be raised 
 ## Tips
 
 - Think about how you go about testing your application.
+- Think about API best practices:
+    - https://swagger.io/resources/articles/best-practices-in-api-design/
