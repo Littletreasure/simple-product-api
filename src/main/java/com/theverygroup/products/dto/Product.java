@@ -19,4 +19,12 @@ public class Product {
     private String department;
     private String weight;
 
+    public String getId() {
+        return id;
+    }
+
+    public String getType() {
+        return type.getName();
+    }
+
 }
