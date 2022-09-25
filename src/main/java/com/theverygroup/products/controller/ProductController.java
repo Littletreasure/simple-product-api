@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -53,7 +54,7 @@ public class ProductController {
     }
 
     @PostMapping("/products")
-    public ResponseEntity<?> addProduct(@RequestBody Product product) {
+    public ResponseEntity<?> addProduct(@Valid @RequestBody Product product) {
         Product newProduct = productRepository.addProduct(product);
         if (newProduct == null) {
             return ResponseEntity.badRequest().body("Product id already exists");

@@ -2,6 +2,7 @@ package com.theverygroup.products.dto;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
+import javax.validation.constraints.NotEmpty;
 
 @AllArgsConstructor
 public enum Type {
@@ -14,6 +15,7 @@ public enum Type {
     VOUCHERS("Voucher");
 
     @JsonValue
+    @NotEmpty
     private String name;
 
     public String getName() {
